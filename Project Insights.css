@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8ece9;
+}
+
+/* General header styling */
+header {
+    background-color: #fff; /* White background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side: Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Adjust the size of your logo */
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Right side: Navigation and partner logo */
+.nav-and-partner {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation menu */
+nav {
+    margin-right: 20px; /* Space between nav and partner logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between each link */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: green; /* Hover color */
+}
+
+/* Partner logo */
+.partner-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.partner-logo {
+    height: 60px; /* Adjust based on your image */
+}
+/* Quote Section Styling */
+.quote-section {
+    background-color: #d3d3b8;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 300 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.quote-slider {
+    position: relative;
+    max-width: 800px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes {
+    display: flex;
+    transition: transform 3s ease-in-out;
+    height: 100%
+}
+
+.quote {
+    display: none;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.quote-author {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Arrows for manual control */
+.prev-quote, .next-quote {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 00%;
+    transition: background-color 0.3s ease;
+}
+
+.prev-quote:hover, .next-quote:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.prev-quote {
+    left: 0px;
+}
+
+.next-quote {
+    right: 0px;
+}
+
+/* Demographics Section */
+.demographics-section {
+    background-color: #d3d3b8;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.demographics-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.demographics-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.demographics-text {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+    padding-right: 90px;
+    border-right: 2px solid #000;
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+.demographics-image {
+    padding-left: 20px;
+}
+
+.demographics-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Education and Occupation Section */
+.education-occupation-section {
+    background-color: #e0e0d1;
+    padding: 40px 20px;
+}
+
+.education-occupation-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.education, .occupation {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+.education {  /* Adds a 2px solid vertical line */
+    padding-right: 80px;           /* Adds padding to the right of the text */
+}
+.occupation {
+    padding-left: 0px;            /* Adds padding to the left to match the education section */
+}
+.education h3, .occupation h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.education p, .occupation p {
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+.occupation p {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+/* Footer Styling */
+footer {
+    background-color: hsl(82, 40%, 25%);
+    color: rgb(245, 244, 244);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between the 3 sections */
+    align-items: center;
+    max-width: 1200px; /* Optional: Limit the width of the footer content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px;
+}
+
+.left-text {
+    text-align: left;
+    flex: 1; /* Ensures this section takes up space on the left */
+}
+
+.right-text {
+    text-align: right;
+    flex: 1; /* Ensures this section takes up space on the right */
+}
+
+.social-icons {
+    text-align: center;
+    flex: 1; /* Ensures this section stays in the center */
+}
+
+.social-icons a {
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.5em; /* Size of the icons */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #90EE90; /* Light green color on hover */
+}
+
+footer p {
+    margin: 0; /* Removes any extra margin */
+}
